@@ -22,7 +22,7 @@ public class EnemyFire : MonoBehaviour
         }else if(other.gameObject.CompareTag("Player")) {
             ResetStage();
         }else if(other.gameObject.CompareTag("Enemy")) {
-            KillEnemy(other.gameObject);
+            //KillEnemy(other.gameObject);
         }
     }
 
