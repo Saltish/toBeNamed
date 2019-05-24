@@ -7,7 +7,7 @@ public class MouseManager : MonoBehaviour
 {
     //记得要将Mouse Position Detector的高度调为0
     
-    private static Vector3 mousePositionWorld;
+    public static Vector3 mousePositionWorld;
 
     public Camera mainCamera;
 

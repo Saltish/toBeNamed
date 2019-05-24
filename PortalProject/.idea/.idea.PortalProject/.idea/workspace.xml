@@ -53,12 +53,11 @@
         <entry file="file://$PROJECT_DIR$/Assets/Decapp/MouseManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
-                <marker date="1558680330023" expanded="true" signature="6:92" ph="..." />
-                <marker date="1558680330023" expanded="true" signature="135:750" ph="{...}" />
-                <marker date="1558680330023" expanded="true" signature="436:448" ph="{...}" />
-                <marker date="1558680330023" expanded="true" signature="514:748" ph="{...}" />
+                <marker date="1558680345841" expanded="true" signature="6:92" ph="..." />
+                <marker date="1558680345841" expanded="true" signature="135:677" ph="{...}" />
+                <marker date="1558680345841" expanded="true" signature="441:675" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -156,12 +155,12 @@
       <updated>1558447024826</updated>
       <workItem from="1558447035053" duration="599000" />
       <workItem from="1558627572797" duration="96000" />
-      <workItem from="1558679051106" duration="1277000" />
+      <workItem from="1558679051106" duration="1894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1972000" />
+    <option name="totallyTimeSpent" value="2589000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -255,12 +254,11 @@
     <entry file="file://$PROJECT_DIR$/Assets/Decapp/MouseManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
-            <marker date="1558680330023" expanded="true" signature="6:92" ph="..." />
-            <marker date="1558680330023" expanded="true" signature="135:750" ph="{...}" />
-            <marker date="1558680330023" expanded="true" signature="436:448" ph="{...}" />
-            <marker date="1558680330023" expanded="true" signature="514:748" ph="{...}" />
+            <marker date="1558680345841" expanded="true" signature="6:92" ph="..." />
+            <marker date="1558680345841" expanded="true" signature="135:677" ph="{...}" />
+            <marker date="1558680345841" expanded="true" signature="441:675" ph="{...}" />
           </folding>
         </state>
       </provider>
