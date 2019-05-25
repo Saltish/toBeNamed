@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class PortalObject : MonoBehaviour
 {
-    private int id;
-
-    private static int idCount = 0;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        id = idCount;
-        idCount++;
-    }
+    public PType type;
     
 
-    public int getId()
+    public PType getType()
     {
-        return id;
+        return type;
     }
 }
+
+public enum PType
+{
+    Portal1, Portal2
+};

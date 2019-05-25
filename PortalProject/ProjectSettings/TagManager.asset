@@ -7,6 +7,8 @@ TagManager:
   - Wall
   - Enemy
   - Mouse Detector
+  - Portal
+  - Placeable
   layers:
   - Default
   - TransparentFX
