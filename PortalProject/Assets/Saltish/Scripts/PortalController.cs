@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class PortalController : MonoBehaviour
 {
-    private static PortalObject nowPortal;
-    private static PortalObject lastPortal;
+    private static GameObject placing = null;
+    public GameObject _portal1;
+    public GameObject _portal2;
+    private static GameObject portal1;
+    private static GameObject portal2;
 
     private static float angle;
-    private static bool teleportable = false;
+    public static bool teleportable = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        nowPortal = GameObject.Find("Portal1").GetComponent<PortalObject>();
-        lastPortal = GameObject.Find("Portal2").GetComponent<PortalObject>();
+        portal1 = _portal1;
+        portal2 = _portal2;
     }
 
     // Update is called once per frame
@@ -23,32 +25,67 @@ public class PortalController : MonoBehaviour
         
     }
 
-    public static PortalObject getAnotherPortal(int id)
+    public static GameObject getAnotherPortal(PType p)
     {
-        if (nowPortal.getId() == id) return lastPortal;
-        else return nowPortal;
+        if (p == PType.Portal1) return portal2;
+        else return portal1;
     }
 
     public static void placeNextPortal(Vector3 pos, Quaternion rot)
     {
-        PortalObject tmpObj;
-        if (!lastPortal.gameObject.activeSelf)
+        GameObject tmpObj;
+        if (!portal1.activeSelf)
         {
-            lastPortal.gameObject.SetActive(true);
-            tmpObj = lastPortal;
-        } else if (!nowPortal.gameObject.activeSelf)
+            portal1.SetActive(true);
+            tmpObj = portal1;
+        } else if (!portal2.activeSelf)
         {
-            nowPortal.gameObject.SetActive(true);
-            tmpObj = nowPortal;
+            portal2.SetActive(true);
+            tmpObj = portal2;
             teleportable = true;
         } else
         {
-            tmpObj = lastPortal;
-            lastPortal = nowPortal;
-            nowPortal = tmpObj;
+            tmpObj = portal2;
+            portal2 = portal1;
+            portal1 = tmpObj;
         }
 
-        tmpObj.gameObject.transform.position = pos;
-        tmpObj.gameObject.transform.rotation = rot;
+        tmpObj.transform.position = pos;
+        tmpObj.transform.rotation = rot;
     }
+
+    public static void startPlacePortal(PType p, Vector3 pos)
+    {
+        if (p == PType.Portal1)
+        {
+            placing = portal1;
+        } else
+        {
+            placing = portal2;
+        }
+        if (!placing.gameObject.activeSelf)
+        {
+            placing.gameObject.SetActive(true);
+            if (portal1.activeSelf && portal2.activeSelf)
+            {
+                teleportable = true;
+            }
+        }
+        Transform transform = placing.gameObject.transform;
+        transform.position = new Vector3(pos.x, transform.position.y, pos.z);
+    }
+
+    public static void rotatePlacingPortal(Vector3 mousePos)
+    {
+        if (placing == null) return;
+        Transform transform = placing.gameObject.transform;
+        transform.LookAt(new Vector3(mousePos.x, transform.position.y, mousePos.z));
+    }
+
+    public static void endPlacingPortal()
+    {
+        placing = null;
+    }
+
+    
 }
