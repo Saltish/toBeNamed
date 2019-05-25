@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Teleportable : MonoBehaviour
 {
-    private Vector3 pos;
-    private bool moveFlag = false;
     private bool canMove = true;
     private PType nowP;
     private int exitCount = 0;
@@ -17,8 +15,7 @@ public class Teleportable : MonoBehaviour
             PortalObject nowPortal = other.gameObject.GetComponent<PortalObject>();
             GameObject anotherPortal = PortalController.getAnotherPortal(nowPortal.getType());
             Vector3 newPos = anotherPortal.transform.position;
-            pos = new Vector3(newPos.x, transform.position.y, newPos.z);
-            moveFlag = true;
+            transform.position = new Vector3(newPos.x, transform.position.y, newPos.z);
             canMove = false;
             //TODO 带角度
         }
@@ -36,16 +33,6 @@ public class Teleportable : MonoBehaviour
                 exitCount = 0;
                 canMove = true;
             }
-        }
-    }
-
-    private void LateUpdate()
-    {
-        if (moveFlag)
-        {
-            Debug.Log(pos);
-            transform.position = pos;
-            moveFlag = false;
         }
     }
 }
