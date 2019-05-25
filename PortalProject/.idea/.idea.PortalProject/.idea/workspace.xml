@@ -13,7 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyFire.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="225">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding>
                 <marker date="1558588482667" expanded="true" signature="6:78" ph="..." />
                 <marker date="1558588482667" expanded="true" signature="118:840" ph="{...}" />
@@ -31,33 +32,105 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+              <folding>
+                <marker date="1558792434545" expanded="false" signature="6:100" ph="..." />
+                <marker date="1558792434545" expanded="true" signature="135:917" ph="{...}" />
+                <marker date="1558792434545" expanded="true" signature="370:471" ph="{...}" />
+                <marker date="1558792434545" expanded="true" signature="529:595" ph="{...}" />
+                <marker date="1558792434545" expanded="true" signature="613:915" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/PortalController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="780">
+              <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
               <folding>
-                <marker date="1558588482643" expanded="true" signature="6:78" ph="..." />
-                <marker date="1558588482643" expanded="true" signature="125:1438" ph="{...}" />
-                <marker date="1558588482643" expanded="true" signature="364:531" ph="{...}" />
-                <marker date="1558588482643" expanded="true" signature="589:610" ph="{...}" />
-                <marker date="1558588482643" expanded="true" signature="667:766" ph="{...}" />
-                <marker date="1558588482643" expanded="true" signature="835:1436" ph="{...}" />
-                <marker date="1558588482643" expanded="true" signature="917:1021" ph="{...}" />
-                <marker date="1558588482643" expanded="true" signature="1064:1199" ph="{...}" />
-                <marker date="1558588482643" expanded="true" signature="1204:1325" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="6:78" ph="..." />
+                <marker date="1558791315648" expanded="true" signature="125:2218" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="419:487" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="545:566" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="622:711" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="780:1288" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="846:933" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="963:1083" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="1088:1199" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="1351:1875" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="1389:1440" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="1445:1496" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="1540:1731" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="1656:1721" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="1937:2131" ph="{...}" />
+                <marker date="1558791315648" expanded="true" signature="2174:2210" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Decapp/MouseManager.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/Teleportable.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding>
+                <marker date="1558793753495" expanded="false" signature="6:78" ph="..." />
+                <marker date="1558793753495" expanded="true" signature="121:1509" ph="{...}" />
+                <marker date="1558793753495" expanded="true" signature="260:1157" ph="{...}" />
+                <marker date="1558793753495" expanded="true" signature="356:1151" ph="{...}" />
+                <marker date="1558793753495" expanded="true" signature="751:842" ph="/* TODO 带角度 ... */" />
+                <marker date="1558793753495" expanded="true" signature="1205:1507" ph="{...}" />
+                <marker date="1558793753495" expanded="true" signature="1299:1501" ph="{...}" />
+                <marker date="1558793753495" expanded="true" signature="1400:1491" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/PlayerController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+              <folding>
+                <marker date="1558791542095" expanded="true" signature="6:78" ph="..." />
+                <marker date="1558791542095" expanded="true" signature="125:1495" ph="{...}" />
+                <marker date="1558791542095" expanded="true" signature="511:671" ph="{...}" />
+                <marker date="1558791542095" expanded="true" signature="729:762" ph="{...}" />
+                <marker date="1558791542095" expanded="true" signature="785:873" ph="{...}" />
+                <marker date="1558791542095" expanded="true" signature="903:1493" ph="{...}" />
+                <marker date="1558791542095" expanded="true" signature="1046:1098" ph="{...}" />
+                <marker date="1558791542095" expanded="true" signature="1131:1184" ph="{...}" />
+                <marker date="1558791542095" expanded="true" signature="1216:1269" ph="{...}" />
+                <marker date="1558791542095" expanded="true" signature="1302:1354" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/MouseManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
               <folding>
-                <marker date="1558680345841" expanded="true" signature="6:92" ph="..." />
-                <marker date="1558680345841" expanded="true" signature="135:677" ph="{...}" />
-                <marker date="1558680345841" expanded="true" signature="441:675" ph="{...}" />
+                <marker date="1558791315625" expanded="false" signature="6:104" ph="..." />
+                <marker date="1558791315625" expanded="true" signature="147:1701" ph="{...}" />
+                <marker date="1558791315625" expanded="true" signature="192:333" ph="/* Swap cursors per object ... */" />
+                <marker date="1558791315625" expanded="true" signature="428:1699" ph="{...}" />
+                <marker date="1558791315625" expanded="true" signature="574:1693" ph="{...}" />
+                <marker date="1558791315625" expanded="true" signature="651:949" ph="{...}" />
+                <marker date="1558791315625" expanded="true" signature="805:935" ph="{...}" />
+                <marker date="1558791315625" expanded="true" signature="1014:1555" ph="{...}" />
+                <marker date="1558791315625" expanded="true" signature="1171:1323" ph="{...}" />
+                <marker date="1558791315625" expanded="true" signature="1389:1541" ph="{...}" />
+                <marker date="1558791315625" expanded="true" signature="1572:1683" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -69,14 +142,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/Teleportable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/PortalController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/PortalObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/MouseManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyFire.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Decapp/MouseManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Decapp/MouseManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Saltish/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Saltish/Scripts/Teleportable.cs" />
       </list>
     </option>
   </component>
@@ -96,11 +176,11 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,12 +235,13 @@
       <updated>1558447024826</updated>
       <workItem from="1558447035053" duration="599000" />
       <workItem from="1558627572797" duration="96000" />
-      <workItem from="1558679051106" duration="1894000" />
+      <workItem from="1558679051106" duration="2611000" />
+      <workItem from="1558791520101" duration="2236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2589000" />
+    <option name="totallyTimeSpent" value="5542000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -173,9 +254,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18967828" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19235925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -216,9 +296,39 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Decapp/MouseManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <marker date="1558791542095" expanded="true" signature="6:78" ph="..." />
+            <marker date="1558791542095" expanded="true" signature="125:1495" ph="{...}" />
+            <marker date="1558791542095" expanded="true" signature="511:671" ph="{...}" />
+            <marker date="1558791542095" expanded="true" signature="729:762" ph="{...}" />
+            <marker date="1558791542095" expanded="true" signature="785:873" ph="{...}" />
+            <marker date="1558791542095" expanded="true" signature="903:1493" ph="{...}" />
+            <marker date="1558791542095" expanded="true" signature="1046:1098" ph="{...}" />
+            <marker date="1558791542095" expanded="true" signature="1131:1184" ph="{...}" />
+            <marker date="1558791542095" expanded="true" signature="1216:1269" ph="{...}" />
+            <marker date="1558791542095" expanded="true" signature="1302:1354" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyFire.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="225">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
             <marker date="1558588482667" expanded="true" signature="6:78" ph="..." />
             <marker date="1558588482667" expanded="true" signature="118:840" ph="{...}" />
@@ -234,31 +344,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/PortalController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="345">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
           <folding>
-            <marker date="1558588482643" expanded="true" signature="6:78" ph="..." />
-            <marker date="1558588482643" expanded="true" signature="125:1438" ph="{...}" />
-            <marker date="1558588482643" expanded="true" signature="364:531" ph="{...}" />
-            <marker date="1558588482643" expanded="true" signature="589:610" ph="{...}" />
-            <marker date="1558588482643" expanded="true" signature="667:766" ph="{...}" />
-            <marker date="1558588482643" expanded="true" signature="835:1436" ph="{...}" />
-            <marker date="1558588482643" expanded="true" signature="917:1021" ph="{...}" />
-            <marker date="1558588482643" expanded="true" signature="1064:1199" ph="{...}" />
-            <marker date="1558588482643" expanded="true" signature="1204:1325" ph="{...}" />
+            <marker date="1558792434545" expanded="false" signature="6:100" ph="..." />
+            <marker date="1558792434545" expanded="true" signature="135:917" ph="{...}" />
+            <marker date="1558792434545" expanded="true" signature="370:471" ph="{...}" />
+            <marker date="1558792434545" expanded="true" signature="529:595" ph="{...}" />
+            <marker date="1558792434545" expanded="true" signature="613:915" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Decapp/MouseManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/PortalObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <marker date="1558791315650" expanded="false" signature="6:78" ph="..." />
+            <marker date="1558791315650" expanded="true" signature="121:214" ph="{...}" />
+            <marker date="1558791315650" expanded="true" signature="179:212" ph="{...}" />
+            <marker date="1558791315650" expanded="true" signature="233:258" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/MouseManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding>
-            <marker date="1558680345841" expanded="true" signature="6:92" ph="..." />
-            <marker date="1558680345841" expanded="true" signature="135:677" ph="{...}" />
-            <marker date="1558680345841" expanded="true" signature="441:675" ph="{...}" />
+            <marker date="1558791315625" expanded="false" signature="6:104" ph="..." />
+            <marker date="1558791315625" expanded="true" signature="147:1701" ph="{...}" />
+            <marker date="1558791315625" expanded="true" signature="192:333" ph="/* Swap cursors per object ... */" />
+            <marker date="1558791315625" expanded="true" signature="428:1699" ph="{...}" />
+            <marker date="1558791315625" expanded="true" signature="574:1693" ph="{...}" />
+            <marker date="1558791315625" expanded="true" signature="651:949" ph="{...}" />
+            <marker date="1558791315625" expanded="true" signature="805:935" ph="{...}" />
+            <marker date="1558791315625" expanded="true" signature="1014:1555" ph="{...}" />
+            <marker date="1558791315625" expanded="true" signature="1171:1323" ph="{...}" />
+            <marker date="1558791315625" expanded="true" signature="1389:1541" ph="{...}" />
+            <marker date="1558791315625" expanded="true" signature="1572:1683" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/PortalController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+          <folding>
+            <marker date="1558791315648" expanded="true" signature="6:78" ph="..." />
+            <marker date="1558791315648" expanded="true" signature="125:2218" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="419:487" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="545:566" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="622:711" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="780:1288" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="846:933" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="963:1083" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="1088:1199" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="1351:1875" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="1389:1440" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="1445:1496" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="1540:1731" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="1656:1721" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="1937:2131" ph="{...}" />
+            <marker date="1558791315648" expanded="true" signature="2174:2210" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Saltish/Scripts/Teleportable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <marker date="1558793753495" expanded="false" signature="6:78" ph="..." />
+            <marker date="1558793753495" expanded="true" signature="121:1509" ph="{...}" />
+            <marker date="1558793753495" expanded="true" signature="260:1157" ph="{...}" />
+            <marker date="1558793753495" expanded="true" signature="356:1151" ph="{...}" />
+            <marker date="1558793753495" expanded="true" signature="751:842" ph="/* TODO 带角度 ... */" />
+            <marker date="1558793753495" expanded="true" signature="1205:1507" ph="{...}" />
+            <marker date="1558793753495" expanded="true" signature="1299:1501" ph="{...}" />
+            <marker date="1558793753495" expanded="true" signature="1400:1491" ph="{...}" />
           </folding>
         </state>
       </provider>

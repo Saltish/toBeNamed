@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
     void LateUpdate()
     {
-        mainCamera.transform.position = this.transform.position + offset;
+        //mainCamera.transform.position = this.transform.position + offset;
     }
 
     private void checkMove()

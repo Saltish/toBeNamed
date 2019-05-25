@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mr.destination = player.transform.position;
+        //mr.destination = player.transform.position;
     }
 
     void Shoot()

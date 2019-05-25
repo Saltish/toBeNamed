@@ -17,7 +17,15 @@ public class Teleportable : MonoBehaviour
             Vector3 newPos = anotherPortal.transform.position;
             transform.position = new Vector3(newPos.x, transform.position.y, newPos.z);
             canMove = false;
+            
             //TODO 带角度
+            //this part by Decapp might be bad coding, feel free to make changes
+            Quaternion q = Quaternion.AngleAxis(
+                anotherPortal.transform.eulerAngles.y - nowPortal.transform.eulerAngles.y,
+                Vector3.up); //Quaternion of Rotation
+
+            GetComponent<Rigidbody>().velocity = q * GetComponent<Rigidbody>().velocity;
+            //
         }
     }
 

@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Decapp/DecappTestScene.unity
+    guid: 5ce41921558fcd14b9076e2129b785e0
   m_configObjects: {}
