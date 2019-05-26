@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6174927941374532238}
   - component: {fileID: 6174927941374532233}
   - component: {fileID: 6174927941374532232}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,9 +103,9 @@ GameObject:
   - component: {fileID: 6174927941693378348}
   - component: {fileID: 6174927941693378351}
   - component: {fileID: 6174927941693378350}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -194,9 +194,9 @@ GameObject:
   - component: {fileID: 6174927942220189096}
   - component: {fileID: 6174927942220189099}
   - component: {fileID: 6174927942220189098}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -334,6 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c354d896007774e4cae1a65690fc89c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
 --- !u!1 &6174927942315161561
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,9 +347,9 @@ GameObject:
   - component: {fileID: 6174927942315161564}
   - component: {fileID: 6174927942315161567}
   - component: {fileID: 6174927942315161566}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

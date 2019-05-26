@@ -21,9 +21,9 @@ public class Teleportable : MonoBehaviour
             //TODO 带角度
             //this part by Decapp might be bad coding, feel free to make changes
             Quaternion q = Quaternion.AngleAxis(
-                anotherPortal.transform.eulerAngles.y - nowPortal.transform.eulerAngles.y,
+                anotherPortal.transform.eulerAngles.y + nowPortal.transform.eulerAngles.y,
                 Vector3.up); //Quaternion of Rotation
-
+            
             GetComponent<Rigidbody>().velocity = q * GetComponent<Rigidbody>().velocity;
             //
         }

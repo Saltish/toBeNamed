@@ -6,20 +6,16 @@
     <e p="D:\U3d5.5\projects\toBeNamed\PortalProject" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Saltish" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="EndSceneManager.cs" t="Include" />
-            <e p="MouseManager.cs" t="Include" />
-            <e p="PlayerController.cs" t="Include" />
-            <e p="PortalController.cs" t="Include" />
-            <e p="PortalObject.cs" t="Include" />
-            <e p="StartSceneManager.cs" t="Include" />
-            <e p="Teleportable.cs" t="Include" />
-          </e>
-        </e>
         <e p="Scripts" t="Include">
+          <e p="EndSceneManager.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
           <e p="EnemyFire.cs" t="Include" />
+          <e p="MouseManager.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
+          <e p="PortalController.cs" t="Include" />
+          <e p="PortalObject.cs" t="Include" />
+          <e p="StartSceneManager.cs" t="Include" />
+          <e p="Teleportable.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
