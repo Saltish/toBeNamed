@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Decapp/DecappTestScene.unity
+    path: Assets/Scenes/DecappTestScene.unity
     guid: 5ce41921558fcd14b9076e2129b785e0
   m_configObjects: {}
