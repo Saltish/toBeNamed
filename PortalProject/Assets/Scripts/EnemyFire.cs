@@ -18,7 +18,7 @@ public class EnemyFire : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.CompareTag("Wall")) {
-            GameObject.Destroy(this.gameObject);
+            Destroy(gameObject);
         }else if(other.gameObject.CompareTag("Player")) {
             ResetStage();
         }else if(other.gameObject.CompareTag("Enemy")) {
@@ -28,8 +28,7 @@ public class EnemyFire : MonoBehaviour
 
     private void KillEnemy(GameObject enemy) {
         //  TODO
-        GameObject.Destroy(enemy);
-        return;
+        Destroy(enemy);
     }
 
     private void ResetStage() {
