@@ -4,38 +4,41 @@ using UnityEngine;
 
 public class Teleportable : MonoBehaviour
 {
-    private bool canMove = true;
+    public bool canMove = true;
     private PType nowP;
     private int exitCount = 0;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (canMove && other.gameObject.tag == "Portal" && PortalController.teleportable)
+        if (canMove && other.gameObject.CompareTag("Portal") && PortalController.teleportable)
         {
-            PortalObject nowPortal = other.gameObject.GetComponent<PortalObject>();
-            GameObject anotherPortal = PortalController.getAnotherPortal(nowPortal.getType());
-            Vector3 newPos = anotherPortal.transform.position;
-            transform.position = new Vector3(newPos.x, transform.position.y, newPos.z);
+            PortalObject nowPortal = other.GetComponent<PortalObject>();
+            Transform nowTrans = other.transform;
+            Transform newTrans = PortalController.getAnotherPortal(nowPortal.getType()).transform;
             canMove = false;
-            
-            //TODO 带角度
-            //this part by Decapp might be bad coding, feel free to make changes
-            Quaternion q = Quaternion.AngleAxis(
-                anotherPortal.transform.eulerAngles.y + nowPortal.transform.eulerAngles.y,
-                Vector3.up); //Quaternion of Rotation
-            
+
+            //q是 旧传送门位姿 到 新传送门位姿 的旋转四元数
+            Quaternion q = Quaternion.FromToRotation(nowTrans.forward, -newTrans.forward);
+            //offset是 “物体现位置 相对于 现传送门中心”的偏置经过旋转得到的“物体新位置 相对于 新传送门中心”的新偏置
+            Vector3 offset = q*(transform.position-nowTrans.position);
+            //以新传送门中心出发，加上新偏置，加上新传送门正方向*（传送门厚度 + 物体厚度（目前主角为1.6） + 余量
+            transform.position = newTrans.position + offset + newTrans.forward * (1f + 1.6f + 0.3f);
+            //对物体朝向也进行旋转
+            transform.rotation *= q;
+
             GetComponent<Rigidbody>().velocity = q * GetComponent<Rigidbody>().velocity;
-            //
+            
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         
-        if (other.gameObject.tag == "Portal" && PortalController.teleportable)
+        if (other.gameObject.CompareTag("Portal") && PortalController.teleportable)
         {
             exitCount++;
-            Debug.Log(exitCount);
+            Debug.Log("exit "+exitCount);
+            //TODO 当exit一个传送门（允许下次传送时）传送门外观发生变化以提示这一点
             if (exitCount == 2)
             {
                 exitCount = 0;

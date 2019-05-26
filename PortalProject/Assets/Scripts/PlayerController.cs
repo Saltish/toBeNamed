@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         checkMove();
+        
+        //TODO:Look at?
     }
 
     void LateUpdate()
