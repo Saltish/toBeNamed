@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class PortalController : MonoBehaviour
 {
+    public GameObject[] portalPool;
+    private bool newPairFlag = true;
+
+    private void Start()
+    {
+        for (int i = 0; i < portalPool.Length; i+=2)
+        {
+            PortalObject p1 = portalPool[i].GetComponent<PortalObject>();
+            PortalObject p2 = portalPool[i + 1].GetComponent<PortalObject>();
+            p1.setPartner(p2);
+            p2.setPartner(p1);
+        }
+    }
+
+    /* 老版本代码
     private static GameObject placing = null;
     public GameObject _portal1;
     public GameObject _portal2;
@@ -86,6 +101,6 @@ public class PortalController : MonoBehaviour
     {
         placing = null;
     }
-
+    */
     
 }

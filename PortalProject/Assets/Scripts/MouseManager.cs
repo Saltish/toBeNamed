@@ -21,6 +21,9 @@ public class MouseManager : MonoBehaviour
     {
         RaycastHit hit;
 
+
+
+        /* 老版本代码
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 50, clickableLayer.value))
         {
             Vector3 mousePos = hit.point;
@@ -51,7 +54,7 @@ public class MouseManager : MonoBehaviour
             {
                 //Cursor.SetCursor(pointer, new Vector2(16, 16), CursorMode.Auto);
             }
-        }
+        }*/
     }
     
 }
