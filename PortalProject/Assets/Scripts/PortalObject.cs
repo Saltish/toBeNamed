@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PortalObject : MonoBehaviour
 {
-    public PType type;
-    
+    private PortalObject partner = null;
 
-    public PType getType()
+
+    public PortalObject getPartner()
     {
-        return type;
+        return partner;
+    }
+
+    public void setPartner(PortalObject p)
+    {
+        partner = p;
     }
 }
-
-public enum PType
-{
-    Portal1, Portal2
-};

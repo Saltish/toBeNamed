@@ -9,6 +9,9 @@ TagManager:
   - Mouse Detector
   - Portal
   - Placeable
+  - Type1
+  - Type2
+  - Treasure
   layers:
   - Default
   - TransparentFX
