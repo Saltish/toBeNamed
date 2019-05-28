@@ -17,9 +17,9 @@ public class PlayerController : MonoBehaviour
     [Header("---功能按键---")]
     public string shiftLeft = "q";
     public string shiftRight = "e";
+    public string push = " ";
 
     public GameObject touch;
-
 
     private Camera mainCamera;  // 主摄像机
     private Vector3 offset;
@@ -79,8 +79,8 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetKeyDown("q"))
         {
-            GameObject portal = touch.GetComponent<Touch>().getFacedPortal();
-            if (portal)
+            GameObject portal = touch.GetComponent<Touch>().getFacedObj();
+            if (portal && portal.CompareTag("Portal"))
             {
                 
                 portal.transform.Rotate(Vector3.up * 45);
@@ -88,11 +88,19 @@ public class PlayerController : MonoBehaviour
         }
         else if(Input.GetKeyDown("e"))
         {
-            GameObject portal = touch.GetComponent<Touch>().getFacedPortal();
-            if (portal)
+            GameObject portal = touch.GetComponent<Touch>().getFacedObj();
+            if (portal && portal.CompareTag("Portal"))
             {
                 portal.transform.Rotate(-Vector3.up * 45);
             }
+        }
+        else if (Input.GetKeyDown("space"))
+        {
+            GameObject treasure = touch.GetComponent<Touch>().getFacedObj();
+            if (treasure && treasure.CompareTag("Treasure"))
+            {
+                treasure.GetComponent<Rigidbody>().velocity = transform.forward * speedMove;
+            } 
         }
 
     }

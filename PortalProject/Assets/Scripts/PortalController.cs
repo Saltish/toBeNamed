@@ -5,7 +5,6 @@ using UnityEngine;
 public class PortalController : MonoBehaviour
 {
     public GameObject[] portalPool;
-    private bool newPairFlag = true;
 
     private void Start()
     {
