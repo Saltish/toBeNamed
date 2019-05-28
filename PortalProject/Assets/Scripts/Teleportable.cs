@@ -14,7 +14,7 @@ public class Teleportable : MonoBehaviour
         {
             PortalObject nowPortal = other.GetComponent<PortalObject>();
             Transform nowTrans = other.transform;
-            Transform newTrans = PortalController.getAnotherPortal(nowPortal.getType()).transform;
+            Transform newTrans = PortalController.GetAnotherPortal(nowPortal.getType()).transform;
             canMove = false;
 
             //q是 旧传送门位姿 到 新传送门位姿 的旋转四元数

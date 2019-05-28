@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("---控制移动的速度---")]
-    public float speedMove = 5.0f;
+    public float speedMove;
 
     [Header("---移动按键---")]
     public string forward = "w";

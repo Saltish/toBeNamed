@@ -25,13 +25,13 @@ public class PortalController : MonoBehaviour
         
     }
 
-    public static GameObject getAnotherPortal(PType p)
+    public static GameObject GetAnotherPortal(PType p)
     {
         if (p == PType.Portal1) return portal2;
         else return portal1;
     }
 
-    public static void placeNextPortal(Vector3 pos, Quaternion rot)
+    public static void PlaceNextPortal(Vector3 pos, Quaternion rot)
     {
         GameObject tmpObj;
         if (!portal1.activeSelf)
@@ -75,14 +75,14 @@ public class PortalController : MonoBehaviour
         transform.position = new Vector3(pos.x, transform.position.y, pos.z);
     }
 
-    public static void rotatePlacingPortal(Vector3 mousePos)
+    public static void RotatePlacingPortal(Vector3 mousePos)
     {
-        if (placing == null) return;
+        if (!placing) return;
         Transform transform = placing.gameObject.transform;
         transform.LookAt(new Vector3(mousePos.x, transform.position.y, mousePos.z));
     }
 
-    public static void endPlacingPortal()
+    public static void EndPlacingPortal()
     {
         placing = null;
     }
