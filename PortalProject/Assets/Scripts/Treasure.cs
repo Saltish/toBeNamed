@@ -9,12 +9,14 @@ public class Treasure : MonoBehaviour
     public Material type1;
     public Material type2;
     private Renderer renderer;
+    private Vector3 startPos;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         renderer = GetComponent<Renderer>();
         renderer.material = type1;
+        startPos = transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,6 +26,18 @@ public class Treasure : MonoBehaviour
             Vector3 pos = other.transform.position;
             transform.position = new Vector3(pos.x, transform.position.y, pos.z);
             rb.velocity = getNewVelocity(other.transform.forward);
+        }
+        else if (other.CompareTag("Wall"))
+        {
+            transform.position = startPos;
+            transform.rotation = new Quaternion();
+            rb.velocity = Vector3.zero;
+            renderer.material = type1;
+            typeFlag = true;
+        }
+        else if (other.CompareTag("Destination"))
+        {
+            Destroy(gameObject);
         }
     }
 
