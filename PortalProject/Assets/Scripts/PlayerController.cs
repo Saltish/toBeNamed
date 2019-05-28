@@ -37,8 +37,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         checkMove();
-        checkInterction();
-        //TODO:Look at?
+        checkInteraction();
     }
 
     void LateUpdate()
@@ -74,7 +73,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = toMove;
     }
 
-    private void checkInterction()
+    private void checkInteraction()
     {
         
         if (Input.GetKeyDown(shiftLeft))
