@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     [Header("---功能按键---")]
     public string shiftLeft = "q";
     public string shiftRight = "e";
-    public string push = " ";
+    public string push = "space";
 
     public GameObject touch;
 
@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
     private void checkInterction()
     {
         
-        if (Input.GetKeyDown("q"))
+        if (Input.GetKeyDown(shiftLeft))
         {
             GameObject portal = touch.GetComponent<Touch>().getFacedObj();
             if (portal && portal.CompareTag("Portal"))
@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
                 portal.transform.Rotate(Vector3.up * 45);
             }
         }
-        else if(Input.GetKeyDown("e"))
+        else if(Input.GetKeyDown(shiftRight))
         {
             GameObject portal = touch.GetComponent<Touch>().getFacedObj();
             if (portal && portal.CompareTag("Portal"))
@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
                 portal.transform.Rotate(-Vector3.up * 45);
             }
         }
-        else if (Input.GetKeyDown("space"))
+        else if (Input.GetKeyDown(push))
         {
             GameObject treasure = touch.GetComponent<Touch>().getFacedObj();
             if (treasure && treasure.CompareTag("Treasure"))
