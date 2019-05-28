@@ -5,7 +5,7 @@ using UnityEngine;
 public class Touch : MonoBehaviour
 {
     public GameObject player;
-    private GameObject facedPortal;
+    private GameObject facedObj;
 
     // Update is called once per frame
     void Update()
@@ -15,22 +15,22 @@ public class Touch : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Portal")
+        if (other.CompareTag("Portal") || other.CompareTag("Treasure"))
         {
-            facedPortal = other.gameObject;
+            facedObj = other.gameObject;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Portal")
+        if (other.tag == "Portal" || other.CompareTag("Treasure"))
         {
-            facedPortal = null;
+            facedObj = null;
         }
     }
 
-    public GameObject getFacedPortal()
+    public GameObject getFacedObj()
     {
-        return facedPortal;
+        return facedObj;
     }
 }
