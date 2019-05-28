@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     [Header("---控制移动的速度---")]
     public float speedMove;
 
@@ -12,6 +13,12 @@ public class PlayerController : MonoBehaviour
     public string back = "s";
     public string left = "a";
     public string right = "d";
+
+    [Header("---功能按键---")]
+    public string shiftLeft = "q";
+    public string shiftRight = "e";
+
+    public GameObject touch;
 
 
     private Camera mainCamera;  // 主摄像机
@@ -30,7 +37,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         checkMove();
-        
+        checkInterction();
         //TODO:Look at?
     }
 
@@ -47,24 +54,46 @@ public class PlayerController : MonoBehaviour
         // 移动
         if (Input.GetKey(forward))
         {
-            deltaZ = speedMove;
-        } 
-        if (Input.GetKey(back))
-        {
-            deltaZ = -speedMove;
-        }
-        if (Input.GetKey(left))
-        {
             deltaX = -speedMove;
-        }
-        if (Input.GetKey(right))
+        } 
+        else if (Input.GetKey(back))
         {
             deltaX = speedMove;
         }
+        else if (Input.GetKey(left))
+        {
+            deltaZ = -speedMove;
+        }
+        else if (Input.GetKey(right))
+        {
+            deltaZ = speedMove;
+        }
 
         Vector3 toMove = new Vector3(deltaX, 0, deltaZ);
-        rb.velocity = Vector3.ClampMagnitude(toMove, speedMove);
+        transform.LookAt(toMove + transform.position);
+        rb.velocity = toMove;
+    }
 
+    private void checkInterction()
+    {
         
+        if (Input.GetKeyDown("q"))
+        {
+            GameObject portal = touch.GetComponent<Touch>().getFacedPortal();
+            if (portal)
+            {
+                
+                portal.transform.Rotate(Vector3.up * 45);
+            }
+        }
+        else if(Input.GetKeyDown("e"))
+        {
+            GameObject portal = touch.GetComponent<Touch>().getFacedPortal();
+            if (portal)
+            {
+                portal.transform.Rotate(-Vector3.up * 45);
+            }
+        }
+
     }
 }
