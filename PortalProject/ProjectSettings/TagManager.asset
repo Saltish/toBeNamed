@@ -23,12 +23,12 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - EnemyFire
+  - Treasure
   - Wall
   - Grid
-  - 
-  - 
-  - 
+  - Portal
+  - PortalCenter
+  - Touch
   - 
   - 
   - 

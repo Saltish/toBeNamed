@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DecappTestScene.unity
     guid: 5ce41921558fcd14b9076e2129b785e0
+  - enabled: 1
+    path: Assets/Scenes/SaltishTestScene.unity
+    guid: 61b67453e006bbf4fb8317f726d61708
   m_configObjects: {}

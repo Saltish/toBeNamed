@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PortalObject : MonoBehaviour
 {
-    private PortalObject partner = null;
+    public PortalObject partner ;
 
 
     public PortalObject getPartner()
     {
+        Debug.Log("getparter");
         return partner;
     }
 

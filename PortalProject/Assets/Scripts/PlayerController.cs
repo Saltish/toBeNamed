@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     private void checkInteraction()
     {
-        
+
         if (Input.GetKeyDown(shiftLeft))
         {
             GameObject portal = touch.getFacedObj();
@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
             GameObject treasure = touch.getFacedObj();
             if (treasure && treasure.CompareTag("Treasure"))
             {
-                treasure.GetComponent<Rigidbody>().velocity = transform.forward * speedMove;
+                treasure.GetComponent<Rigidbody>().velocity = treasure.transform.forward * speedMove;
             } 
         }
 

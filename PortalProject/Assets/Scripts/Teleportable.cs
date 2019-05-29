@@ -22,34 +22,34 @@ public class Teleportable : MonoBehaviour
         if (canMove && other.gameObject.CompareTag("Portal"))
         {
             //获取当前与下个传送门
-            PortalObject nowPortal = other.GetComponent<PortalObject>();
+            PortalObject nowPortal = other.transform.parent.GetComponent<PortalObject>();
             Transform nowTrans = other.transform;
             Transform newTrans = nowPortal.getPartner().transform;
 
             canMove = false;
 
-            //q是 旧传送门位姿 到 新传送门位姿 的旋转四元数
-            Quaternion q = Quaternion.FromToRotation(nowTrans.forward, -newTrans.forward);
-            
-            
             if (treasure)
             {    
                 //子弹的传送
                 transform.position = new Vector3(newTrans.position.x, transform.position.y, newTrans.position.z);
-                treasure.switchFlag();
+                
+                //朝向旋转
+                transform.eulerAngles += newTrans.eulerAngles - nowTrans.eulerAngles;
+                //速度旋转
+                GetComponent<Rigidbody>().velocity = Treasure.speed * transform.forward;
+                
+                //子弹自身类型改变
+                treasure.switchType();
+                
+                
             }
             else
             {
                 //玩家的传送
-                
+                Debug.Log("玩家传送");
                 //以新传送门中心出发，加上新偏置，加上新传送门正方向*（传送门厚度 + 物体厚度（目前主角为1.6） + 余量
-                transform.position = newTrans.position + newTrans.forward * transform.position.y * 0.5f;
+                transform.parent.position = newTrans.position + (-newTrans.forward) *  0.1f;
             }
-            //对物体朝向也进行旋转
-            transform.rotation *= q;
-
-            GetComponent<Rigidbody>().velocity = q * GetComponent<Rigidbody>().velocity;
-            
         }
     }
 
