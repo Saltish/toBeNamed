@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
+    
+    //本脚本暂时没用
     public GameObject fire;
 
     public GameObject fp;

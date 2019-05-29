@@ -9,7 +9,6 @@ public class PortalObject : MonoBehaviour
 
     public PortalObject getPartner()
     {
-        Debug.Log("getparter");
         return partner;
     }
 

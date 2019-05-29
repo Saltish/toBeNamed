@@ -29,7 +29,8 @@ public class Teleportable : MonoBehaviour
             canMove = false;
 
             if (treasure)
-            {    
+            {
+                Debug.Log("子弹传送");
                 //子弹的传送
                 transform.position = new Vector3(newTrans.position.x, transform.position.y, newTrans.position.z);
                 
@@ -57,14 +58,15 @@ public class Teleportable : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Portal"))
         {
-            exitCount++;
+
+            exitCount += treasure ? 2 : 1;
+            
             if (exitCount == 2)
             {
-                Debug.Log("exiting portal");
+                Debug.Log("离开传送门");
                 //离开传送门
                 exitCount = 0;
                 canMove = true;
-                
             }
         }
     }
