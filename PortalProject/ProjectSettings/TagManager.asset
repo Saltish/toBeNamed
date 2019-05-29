@@ -12,6 +12,7 @@ TagManager:
   - Type1
   - Type2
   - Treasure
+  - Destination
   layers:
   - Default
   - TransparentFX
