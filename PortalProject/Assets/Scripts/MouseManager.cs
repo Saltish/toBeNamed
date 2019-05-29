@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public class MouseManager : MonoBehaviour
 {
+    //本脚本暂时没用
+    
     public LayerMask clickableLayer;
 
     // Swap cursors per object
@@ -29,10 +31,10 @@ public class MouseManager : MonoBehaviour
             Vector3 mousePos = hit.point;
             if (placing)
             {
-                PortalController.rotatePlacingPortal(mousePos);
+                PortalController.RotatePlacingPortal(mousePos);
                 if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1))
                 {
-                    PortalController.endPlacingPortal();
+                    PortalController.EndPlacingPortal();
                     placing = false;
                 }
             }

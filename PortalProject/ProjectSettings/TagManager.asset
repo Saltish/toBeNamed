@@ -12,6 +12,7 @@ TagManager:
   - Type1
   - Type2
   - Treasure
+  - Destination
   layers:
   - Default
   - TransparentFX
@@ -22,12 +23,12 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - EnemyFire
+  - Treasure
   - Wall
-  - 
-  - 
-  - 
-  - 
+  - Grid
+  - Portal
+  - PortalCenter
+  - Touch
   - 
   - 
   - 

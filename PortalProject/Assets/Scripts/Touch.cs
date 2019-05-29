@@ -4,33 +4,30 @@ using UnityEngine;
 
 public class Touch : MonoBehaviour
 {
+    //带有这个脚本的对象 应具有trigger盒，属于touch层
     public GameObject player;
-    private GameObject facedPortal;
+    public GameObject facedObj;
 
     // Update is called once per frame
-    void Update()
-    {
-        transform.position = player.transform.position + player.transform.forward * 0.8f;
-    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Portal")
-        {
-            facedPortal = other.gameObject;
-        }
+        if (other.CompareTag("Portal"))
+            facedObj = other.transform.parent.gameObject;
+        else if (other.CompareTag("Treasure"))
+            facedObj = other.gameObject;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Portal")
+        if (other.CompareTag("Portal") || other.CompareTag("Treasure"))
         {
-            facedPortal = null;
+            facedObj = null;
         }
     }
 
-    public GameObject getFacedPortal()
+    public GameObject getFacedObj()
     {
-        return facedPortal;
+        return facedObj;
     }
 }
