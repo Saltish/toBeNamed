@@ -5,13 +5,9 @@ using UnityEngine;
 public class Touch : MonoBehaviour
 {
     public GameObject player;
-    private GameObject facedObj;
+    public GameObject facedObj;
 
     // Update is called once per frame
-    void Update()
-    {
-        transform.position = player.transform.position + player.transform.forward * 0.8f;
-    }
 
     private void OnTriggerEnter(Collider other)
     {

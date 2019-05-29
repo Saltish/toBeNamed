@@ -4,8 +4,41 @@
     <e p="C:\Users\B.Lord\.Rider2019.1\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\B.Lord\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_PortalProject.-684026059.00" t="ExcludeRecursive" />
     <e p="D:\U3d5.5\projects\toBeNamed\PortalProject" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="ProCore" t="Include">
+          <e p="ProGrids" t="Include">
+            <e p="About" t="Include">
+              <e p="changelog.txt" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="pg_AboutWindow.cs" t="Include" />
+              </e>
+              <e p="pc_AboutEntry_ProGrids.txt" t="Include" />
+            </e>
+            <e p="Classes" t="Include">
+              <e p="pg_Constant.cs" t="Include" />
+              <e p="pg_Enum.cs" t="Include" />
+              <e p="pg_IconUtility.cs" t="Include" />
+              <e p="pg_IgnoreSnapAttribute.cs" t="Include" />
+              <e p="pg_SceneMeshRender.cs" t="Include" />
+              <e p="pg_Util.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="pg_Editor.cs" t="Include" />
+              <e p="pg_GridRenderer.cs" t="Include" />
+              <e p="pg_ParameterWindow.cs" t="Include" />
+              <e p="pg_Preferences.cs" t="Include" />
+              <e p="pg_ToggleContent.cs" t="Include" />
+            </e>
+            <e p="MonoBehaviour" t="Include">
+              <e p="pg_IgnoreSnap.cs" t="Include" />
+            </e>
+            <e p="Shader" t="Include">
+              <e p="pg_GridShader.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="EndSceneManager.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
@@ -16,6 +49,8 @@
           <e p="PortalObject.cs" t="Include" />
           <e p="StartSceneManager.cs" t="Include" />
           <e p="Teleportable.cs" t="Include" />
+          <e p="Touch.cs" t="Include" />
+          <e p="Treasure.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

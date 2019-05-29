@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyFire : MonoBehaviour
 {
+    
+    //本脚本暂时没用
+    
     // Start is called before the first frame update
     void Start()
     {

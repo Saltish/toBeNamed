@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public class MouseManager : MonoBehaviour
 {
+    //本脚本暂时没用
+    
     public LayerMask clickableLayer;
 
     // Swap cursors per object
