@@ -12,11 +12,13 @@ public class Treasure : MonoBehaviour
     public Material type2;
     public MeshRenderer mr;
     private Vector3 startPos;
+    private Quaternion startRot;
 
     private void Start()
     {
         mr.material = type1;
         startPos = transform.position;
+        startRot = transform.rotation;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,9 +37,8 @@ public class Treasure : MonoBehaviour
         else if (other.CompareTag("Wall"))
         {
             //撞墙
-            Debug.Log("撞墙，结束");
             transform.position = startPos;
-            transform.rotation = new Quaternion();
+            transform.rotation = startRot;
             rb.velocity = Vector3.zero;
             mr.material = type1;
             typeFlag = true;
