@@ -51,8 +51,8 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 toMove = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * 5.0f;
         rb.velocity = toMove;
-        if(toMove!=Vector3.zero)
-            transform.LookAt(toMove + transform.position);
+        if (toMove != Vector3.zero)
+            transform.forward = toMove.normalized;
     }
 
 //    private void checkMove()
