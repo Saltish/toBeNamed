@@ -48,6 +48,7 @@
           <e p="EndSceneManager.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
           <e p="EnemyFire.cs" t="Include" />
+          <e p="HeadTopMessage.cs" t="Include" />
           <e p="MouseManager.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PortalController.cs" t="Include" />
