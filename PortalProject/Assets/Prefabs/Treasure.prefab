@@ -89,8 +89,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8960232692333937515}
-  type1: {fileID: 2100000, guid: 4c370c4be42e7ef42b486c7ab85de4fc, type: 2}
-  type2: {fileID: 2100000, guid: 41ffdb03543029b45a4eeab0088d3ad5, type: 2}
+  type1: {fileID: 2100000, guid: 41ffdb03543029b45a4eeab0088d3ad5, type: 2}
+  type2: {fileID: 2100000, guid: 4c370c4be42e7ef42b486c7ab85de4fc, type: 2}
   mr: {fileID: 8960232692863585236}
 --- !u!1 &8960232692863585194
 GameObject:
@@ -149,7 +149,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4c370c4be42e7ef42b486c7ab85de4fc, type: 2}
+  - {fileID: 2100000, guid: 41ffdb03543029b45a4eeab0088d3ad5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

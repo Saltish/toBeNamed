@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Teleportable : MonoBehaviour
 {
+    //本脚本同时适用于Treasure和Player
+    
+    
     //能否进入新传送门
     private bool canMove = true;
     //离开传送门判定区的计数，1代表离开进入的门，2代表离开到达的门
@@ -48,6 +51,9 @@ public class Teleportable : MonoBehaviour
             {
                 //玩家的传送
                 Debug.Log("玩家传送");
+                
+                WorldManager.WM.SwitchWorld();
+                
                 //以新传送门中心出发，加上新偏置，加上新传送门正方向*（传送门厚度 + 物体厚度（目前主角为1.6） + 余量
                 transform.parent.position = newTrans.position + (-newTrans.forward) *  0.1f;
             }
@@ -56,11 +62,10 @@ public class Teleportable : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        //离开传送区才能重新传送
         if (other.gameObject.CompareTag("Portal"))
         {
-
             exitCount += treasure ? 2 : 1;
-            
             if (exitCount == 2)
             {
                 Debug.Log("离开传送门");
