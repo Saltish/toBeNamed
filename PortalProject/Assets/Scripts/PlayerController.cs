@@ -49,9 +49,11 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        Vector3 toMove = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * 5.0f;
+        Vector3 toMove = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * 6.0f;
         rb.velocity = toMove;
-        if (toMove != Vector3.zero)
+        
+        
+        if (toMove.magnitude >= 2f)
             transform.forward = toMove.normalized;
     }
 
