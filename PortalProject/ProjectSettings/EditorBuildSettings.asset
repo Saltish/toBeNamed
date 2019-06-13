@@ -5,10 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/DecappTestScene.unity
-    guid: 5ce41921558fcd14b9076e2129b785e0
   - enabled: 1
-    path: Assets/Scenes/SaltishTestScene.unity
-    guid: 61b67453e006bbf4fb8317f726d61708
+    path: Assets/Scenes/StartScene.unity
+    guid: 0df42fa8c95ec964bbad1844bcd21fb6
+  - enabled: 1
+    path: Assets/Scenes/Levels/1-1.unity
+    guid: ab801cd26bc344d4b862b30a2c67215f
+  - enabled: 1
+    path: Assets/Scenes/Levels/1-2.unity
+    guid: aba85f8b0d22f604380d5db64ed39d48
+  - enabled: 1
+    path: Assets/Scenes/Levels/1-3.unity
+    guid: d1d12275440c7384bb08129b26c909ea
+  - enabled: 1
+    path: Assets/Scenes/Levels/1-4.unity
+    guid: 594a5ba4a39c7df4388ad2400cc121f2
+  - enabled: 1
+    path: Assets/Scenes/Levels/1-6.unity
+    guid: 1a38cf00fda6be44fac8de1d34b845d5
+  - enabled: 1
+    path: Assets/Scenes/Levels/3-1.unity
+    guid: a152a050979e6fa4e87ceb55a1daff42
   m_configObjects: {}
