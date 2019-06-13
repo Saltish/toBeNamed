@@ -11,10 +11,14 @@ public class WorldManager : MonoBehaviour
     private Color _color1=new Color(1f, 0.56f, 0.53f);
     private Color _color2=new Color(0.67f, 0.69f, 1f);
 
-    public MeshRenderer[] block1MR;
-    public MeshRenderer[] block2MR;
     private MeshRenderer treasureMR;
+    
+    private GameObject[] block1Model;
+    private GameObject[] block2Model;
 
+
+    private GameObject[] block1Colld;
+    private GameObject[] block2Colld;
     
     private bool realWorldOn=true;
 
@@ -26,16 +30,22 @@ public class WorldManager : MonoBehaviour
         light.color = _color1;
         
         treasureMR = GameObject.FindGameObjectWithTag("Treasure").GetComponentInChildren<MeshRenderer>();
-        
-        foreach (var sr in block1MR)
-            sr.enabled = false;
+
+        block1Model = GameObject.FindGameObjectsWithTag("ReflectWall1");
+        block2Model = GameObject.FindGameObjectsWithTag("ReflectWall2");
+        block1Colld = GameObject.FindGameObjectsWithTag("Type1");
+        block2Colld = GameObject.FindGameObjectsWithTag("Type2");
+
+        foreach (var model in block1Model)
+            model.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R)||Input.GetKeyUp(KeyCode.R))
             SwitchWorld();
+        
 
     }
 
@@ -52,17 +62,18 @@ public class WorldManager : MonoBehaviour
 
         treasureMR.enabled = !treasureMR.enabled;
             
-        foreach (var mr in block1MR)
-        {
-            mr.enabled = !realWorldOn;
-            //主人公不会与layer15相碰
-            mr.gameObject.layer = realWorldOn ? 15 : 0; //我默认sr和碰撞体在一个物体下咯
-        }
-        foreach (var mr in block2MR)
-        {
-            mr.enabled = realWorldOn;
-            mr.gameObject.layer = realWorldOn ? 0 : 15;
-        }
+        foreach (var model in block1Model)
+            model.SetActive(!realWorldOn);
+        foreach (var model in block2Model)
+            model.SetActive(realWorldOn);
+        
+        
+        //主人公不会与layer15相碰
+        foreach (var item in block1Colld)
+            item.layer= realWorldOn ? 15 : 0;
+        foreach (var item in block2Colld)
+            item.layer= realWorldOn ? 0 : 15;
+        
     }
     
 }
