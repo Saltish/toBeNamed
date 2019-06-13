@@ -13,6 +13,12 @@ public class StartSceneManager : MonoBehaviour
     public GameObject slider;
     public GameObject loading;
     public GameObject creditBoard;
+    public GameObject levelsBoard;
+
+    private void Start()
+    {
+        LevelManager.GetInstance().GenerateButtons();
+    }
 
     // Update is called once per frame
     void Update()
@@ -55,6 +61,24 @@ public class StartSceneManager : MonoBehaviour
         }
     }
 
+    public void levelsUp()
+    {
+        if (canClick)
+        {
+            StartCoroutine("IELevelsBoardUp");
+            canClick = false;
+        }
+    }
+
+    public void levelsDown()
+    {
+        if (canClick)
+        {
+            StartCoroutine("IELevelsBoardDown");
+            canClick = false;
+        }
+    }
+
     IEnumerator IEStartGame()
     {
         yield return new WaitForSeconds(0.5f);
@@ -73,6 +97,30 @@ public class StartSceneManager : MonoBehaviour
         yield return asyn;
     }
 
+    IEnumerator IELevelsBoardUp()
+    {
+        RectTransform rb = levelsBoard.GetComponent<RectTransform>();
+        //开始升起
+        for (int i = -450; i <= 0; i += 30)
+        {
+            rb.localPosition = new Vector3(0, i, 0);
+            yield return null;
+        }
+        canClick = true;
+    }
+
+    IEnumerator IELevelsBoardDown()
+    {
+        RectTransform rb = levelsBoard.GetComponent<RectTransform>();
+        //开始降下
+        for (int i = 0; i >= -450; i -= 30)
+        {
+            rb.localPosition = new Vector3(0, i, 0);
+            yield return null;
+        }
+        canClick = true;
+    }
+
     IEnumerator IECreditBoardUp()
     {
         RectTransform rb = creditBoard.GetComponent<RectTransform>();
@@ -84,6 +132,7 @@ public class StartSceneManager : MonoBehaviour
         }
         canClick = true;
     }
+
     IEnumerator IECreditBoardDown()
     {
         RectTransform rb = creditBoard.GetComponent<RectTransform>();
