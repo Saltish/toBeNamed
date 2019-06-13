@@ -46,7 +46,7 @@ public class Treasure : MonoBehaviour
         }
         else if (other.CompareTag("Destination"))
         {
-            Destroy(gameObject);
+            LevelSceneManager.GetInstance().finishLevel();
         }
     }
 
