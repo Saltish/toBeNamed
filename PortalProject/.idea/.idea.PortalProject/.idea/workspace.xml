@@ -146,8 +146,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="82" column="41" lean-forward="true" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+            <state relative-caret-position="462">
+              <caret line="118" column="56" lean-forward="true" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
               <folding>
                 <marker date="1560464786878" expanded="false" signature="6:135" ph="..." />
                 <marker date="1560464786878" expanded="true" signature="178:3183" ph="{...}" />
@@ -372,12 +372,12 @@
       <workItem from="1560061745426" duration="2820000" />
       <workItem from="1560316009634" duration="2417000" />
       <workItem from="1560444211185" duration="5407000" />
-      <workItem from="1560453126847" duration="6223000" />
+      <workItem from="1560453126847" duration="6953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47126000" />
+    <option name="totallyTimeSpent" value="47856000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,8 +647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="82" column="41" lean-forward="true" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+        <state relative-caret-position="462">
+          <caret line="118" column="56" lean-forward="true" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
           <folding>
             <marker date="1560464786878" expanded="false" signature="6:135" ph="..." />
             <marker date="1560464786878" expanded="true" signature="178:3183" ph="{...}" />
