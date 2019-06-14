@@ -101,7 +101,7 @@ public class StartSceneManager : MonoBehaviour
     {
         RectTransform rb = levelsBoard.GetComponent<RectTransform>();
         //开始升起
-        for (int i = -450; i <= 0; i += 30)
+        for (int i = -900; i <= 0; i += 30)
         {
             rb.localPosition = new Vector3(0, i, 0);
             yield return null;
@@ -113,7 +113,7 @@ public class StartSceneManager : MonoBehaviour
     {
         RectTransform rb = levelsBoard.GetComponent<RectTransform>();
         //开始降下
-        for (int i = 0; i >= -450; i -= 30)
+        for (int i = 0; i >= -900; i -= 30)
         {
             rb.localPosition = new Vector3(0, i, 0);
             yield return null;
@@ -125,7 +125,7 @@ public class StartSceneManager : MonoBehaviour
     {
         RectTransform rb = creditBoard.GetComponent<RectTransform>();
         //开始升起
-        for (int i = -450; i <= 0; i += 30)
+        for (int i = -900; i <= 0; i += 30)
         {
             rb.localPosition = new Vector3(0, i, 0);
             yield return null;
@@ -137,7 +137,7 @@ public class StartSceneManager : MonoBehaviour
     {
         RectTransform rb = creditBoard.GetComponent<RectTransform>();
         //开始降下
-        for (int i = 0; i >= -450; i -= 30)
+        for (int i = 0; i >= -900; i -= 30)
         {
             rb.localPosition = new Vector3(0, i, 0);
             yield return null;
