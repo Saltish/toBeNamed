@@ -13,6 +13,8 @@ TagManager:
   - Type2
   - Treasure
   - Destination
+  - ReflectWall1
+  - ReflectWall2
   layers:
   - Default
   - TransparentFX
@@ -29,7 +31,7 @@ TagManager:
   - Portal
   - PortalCenter
   - Touch
-  - 
+  - UnseenBlock
   - 
   - 
   - 

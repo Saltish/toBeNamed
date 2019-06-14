@@ -22,9 +22,13 @@ public class PlayerController : MonoBehaviour
 
     public Touch touch;
 
+    public Animator Anim;
+
     private Camera mainCamera;  // 主摄像机
     private Vector3 offset;
     private Rigidbody rb;
+    private static readonly int Walking = Animator.StringToHash("Walking");
+    private static readonly int Speed = Animator.StringToHash("Speed");
 
     // Start is called before the first frame update
     void Start()
@@ -49,10 +53,23 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        Vector3 toMove = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * 5.0f;
+        Vector3 toMove = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * 10.0f;
         rb.velocity = toMove;
-        if (toMove != Vector3.zero)
+
+        if (toMove.magnitude >= 1f)
+        {
             transform.forward = toMove.normalized;
+        }
+
+        if (toMove.magnitude >= 0.5f)
+        {
+            Anim.SetBool(Walking,true);
+            Anim.SetFloat(Speed,toMove.magnitude);
+        }
+        else
+        {
+            Anim.SetBool(Walking,false);
+        }
     }
 
 //    private void checkMove()

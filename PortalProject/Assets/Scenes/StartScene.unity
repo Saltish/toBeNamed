@@ -1869,7 +1869,6 @@ MonoBehaviour:
   - 1-4
   - 1-6
   - 3-1
-  levelParent: {fileID: 477341483}
   levelObj: {fileID: 9007568328300766090, guid: 9a78548e800499c4b993c327cd900bfe,
     type: 3}
 --- !u!4 &1283078173
@@ -1944,7 +1943,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fa2aec69982a3674199d6dfe629fd276, type: 3}
+    m_Font: {fileID: 12800000, guid: 896c39e5b3e72104e8051bfbc5c70603, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -1956,7 +1955,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Name
+  m_Text: "\u8868\xB7\u91CC"
 --- !u!222 &1331352204
 CanvasRenderer:
   m_ObjectHideFlags: 0

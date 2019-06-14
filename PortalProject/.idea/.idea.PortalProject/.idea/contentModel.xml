@@ -46,9 +46,14 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="EndSceneManager.cs" t="Include" />
-          <e p="Enemy.cs" t="Include" />
-          <e p="EnemyFire.cs" t="Include" />
-          <e p="MouseManager.cs" t="Include" />
+          <e p="HeadTopMessage.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
+          <e p="LevelSceneManager.cs" t="Include" />
+          <e p="not used" t="Include">
+            <e p="Enemy.cs" t="Include" />
+            <e p="EnemyFire.cs" t="Include" />
+            <e p="MouseManager.cs" t="Include" />
+          </e>
           <e p="PlayerController.cs" t="Include" />
           <e p="PortalController.cs" t="Include" />
           <e p="PortalObject.cs" t="Include" />
@@ -56,6 +61,7 @@
           <e p="Teleportable.cs" t="Include" />
           <e p="Touch.cs" t="Include" />
           <e p="Treasure.cs" t="Include" />
+          <e p="WorldManager.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

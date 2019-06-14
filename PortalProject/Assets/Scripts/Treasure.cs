@@ -42,6 +42,7 @@ public class Treasure : MonoBehaviour
             rb.velocity = Vector3.zero;
             mr.material = type1;
             typeFlag = true;
+            WorldManager.WM.SwitchTreasure(typeFlag);
         }
         else if (other.CompareTag("Destination"))
         {
@@ -61,8 +62,12 @@ public class Treasure : MonoBehaviour
     public void switchType()
     {
         //改变子弹种类
-        if (typeFlag) mr.material = type2;
-        else mr.material = type1;
         typeFlag = !typeFlag;
+        
+        WorldManager.WM.SwitchTreasure(typeFlag);
+
+        mr.material = typeFlag ? type1 : type2;
+
+
     }
 }
