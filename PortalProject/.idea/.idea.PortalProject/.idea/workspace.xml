@@ -10,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
@@ -143,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+            <state relative-caret-position="690">
+              <caret line="82" column="41" lean-forward="true" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
               <folding>
                 <marker date="1560464786878" expanded="false" signature="6:135" ph="..." />
                 <marker date="1560464786878" expanded="true" signature="178:3183" ph="{...}" />
@@ -282,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
     <option name="y" value="125" />
     <option name="width" value="1440" />
@@ -372,12 +372,12 @@
       <workItem from="1560061745426" duration="2820000" />
       <workItem from="1560316009634" duration="2417000" />
       <workItem from="1560444211185" duration="5407000" />
-      <workItem from="1560453126847" duration="5611000" />
+      <workItem from="1560453126847" duration="6223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46514000" />
+    <option name="totallyTimeSpent" value="47126000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -389,7 +389,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17158177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -618,36 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
-          <folding>
-            <marker date="1560464786878" expanded="false" signature="6:135" ph="..." />
-            <marker date="1560464786878" expanded="true" signature="178:3183" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="495:632" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="510:600" ph="/* if (_instance == null) ... */" />
-            <marker date="1560464786878" expanded="true" signature="703:1165" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="740:1159" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="1082:1149" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="1200:2011" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="1396:2005" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="1765:1831" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="1848:1910" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2057:2332" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2141:2303" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2223:2293" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2382:2633" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2465:2604" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2524:2594" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2680:2880" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2735:2874" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2794:2864" ph="{...}" />
-            <marker date="1560464786878" expanded="true" signature="2923:3181" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -670,6 +641,36 @@
             <marker date="1560473157116" expanded="true" signature="2926:3013" ph="{...}" />
             <marker date="1560473157116" expanded="true" signature="3064:3331" ph="{...}" />
             <marker date="1560473157116" expanded="true" signature="3190:3320" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="82" column="41" lean-forward="true" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+          <folding>
+            <marker date="1560464786878" expanded="false" signature="6:135" ph="..." />
+            <marker date="1560464786878" expanded="true" signature="178:3183" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="495:632" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="510:600" ph="/* if (_instance == null) ... */" />
+            <marker date="1560464786878" expanded="true" signature="703:1165" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="740:1159" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="1082:1149" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="1200:2011" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="1396:2005" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="1765:1831" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="1848:1910" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2057:2332" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2141:2303" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2223:2293" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2382:2633" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2465:2604" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2524:2594" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2680:2880" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2735:2874" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2794:2864" ph="{...}" />
+            <marker date="1560464786878" expanded="true" signature="2923:3181" ph="{...}" />
           </folding>
         </state>
       </provider>
