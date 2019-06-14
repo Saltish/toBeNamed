@@ -57,7 +57,7 @@ public class LevelSceneManager : MonoBehaviour
         if (_instance == null)
         {
             levelManager = LevelManager.GetInstance();
-            if (levelManager.isSceneFinished(SceneManager.GetActiveScene()))
+            if (levelManager && levelManager.isSceneFinished(SceneManager.GetActiveScene()))
             {
                 setNextLevelActive();
             }

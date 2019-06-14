@@ -48,16 +48,17 @@ public class LevelManager : MonoBehaviour
 
     public void GenerateButtons()
     {
-        float startX = 345;
-        float startY = -210;
+        float startX = -130;
+        float startY = 70;
         float dX = 130;  // 两个level之间x坐标的间隔
         float dY = -50;  // 两个level之间y坐标的间隔
         for (int i = 0; i < levelCount; i++)
         {
             levelButtons[i] = Instantiate(levelObj);
+            levelButtons[i].transform.parent = GameObject.Find("Levels").transform;
 
             RectTransform rb = levelButtons[i].GetComponent<RectTransform>();
-            rb.position = new Vector3(startX + dX * (i % 3), startY + dY * (i / 3), 0);
+            rb.localPosition = new Vector3(startX + dX * (i % 3), startY + dY * (i / 3), 0);
             Text t = levelButtons[i].GetComponentInChildren<Text>();
             t.text = levelNames[i];
 
@@ -71,7 +72,7 @@ public class LevelManager : MonoBehaviour
                 activeOnClick(i);
             }
 
-            levelButtons[i].transform.parent = GameObject.Find("Levels").transform;
+            
         }
     }
 
